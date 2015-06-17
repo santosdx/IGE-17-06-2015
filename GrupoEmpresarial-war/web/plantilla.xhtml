@@ -15,25 +15,32 @@
     <h:body>
 
         <div id="top">
-            <ui:insert name="top">Encabezado</ui:insert>
+            <!--Encabezado-->
+            <!--Imagen DANE-->
+            <p:graphicImage value="./resources/imagen/dane.PNG" />
         </div>
         <div>
             <div id="left">
                 <ui:insert name="left">
-                    <ui:include src="componentes/menu.xhtml" />
+                    <ui:include src="./acceso/menu.xhtml" />
                 </ui:insert>
             </div>
             <div>
-                <div id="right">
-                    <ui:insert name="right">Derecha</ui:insert>
-                </div>
-                <div id="content" class="right_content">
-                    <ui:insert name="content">Contenido</ui:insert>
+                <div id="content" class="left_content">
+                    <ui:insert name="content"></ui:insert>
                 </div>
             </div>
         </div>
         <div id="bottom">
-            <ui:insert name="bottom">Pie de pag</ui:insert>
+            <ui:insert name="bottom"><p align="center">Departamento Administrativo Nacional de Estadística</p>
+            <p align="center">DANE</p>
+            <p align="center">Carrera 59 No. 26-70 Interior I - CAN</p>
+            <p align="center">Conmutador (571) 597 8300 -Fax (571) 597 8399 Línea gratuita de atención 01 8000 912002 ó (571) 97 8300 Exts. 2532 - 2605</p>
+            <p align="center">Horario de atención: Lunes a viernes 8:00 a 17:00</p>
+            <p align="center">A.A. 80043 Zona postal 611</p>
+            <p align="center">Bogotá, D.C., Colombia - Suramérica</p>
+            <p align="center"> </p>
+            <p align="center">sige@dane.gov.co</p></ui:insert>
         </div>
 
     </h:body>
