@@ -9,38 +9,31 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <h:outputStylesheet name="./css/default.css"/>
         <h:outputStylesheet name="./css/cssLayout.css"/>
-        <title>Facelets Template</title>
+        <title>Grupo Empresarial</title>
     </h:head>
 
     <h:body>
 
         <div id="top">
-            <!--Encabezado-->
-            <!--Imagen DANE-->
-            <p:graphicImage value="./resources/imagen/dane.PNG" />
+            <p:graphicImage value="./resources/imagen/logo_dane.png" />
         </div>
-        <div>
+        <div id="center">
             <div id="left">
                 <ui:insert name="left">
                     <ui:include src="./acceso/menu.xhtml" />
                 </ui:insert>
             </div>
-            <div>
-                <div id="content" class="left_content">
-                    <ui:insert name="content"></ui:insert>
-                </div>
+            <div id="content" class="right_content">
+                <ui:insert name="content"></ui:insert>
             </div>
         </div>
         <div id="bottom">
-            <ui:insert name="bottom"><p align="center">Departamento Administrativo Nacional de Estadística</p>
-            <p align="center">DANE</p>
-            <p align="center">Carrera 59 No. 26-70 Interior I - CAN</p>
-            <p align="center">Conmutador (571) 597 8300 -Fax (571) 597 8399 Línea gratuita de atención 01 8000 912002 ó (571) 97 8300 Exts. 2532 - 2605</p>
-            <p align="center">Horario de atención: Lunes a viernes 8:00 a 17:00</p>
-            <p align="center">A.A. 80043 Zona postal 611</p>
-            <p align="center">Bogotá, D.C., Colombia - Suramérica</p>
-            <p align="center"> </p>
-            <p align="center">sige@dane.gov.co</p></ui:insert>
+            <p><strong>Departamento Administrativo Nacional de Estadística DANE</strong></p>
+            <p>Horario de atención: Lunes a viernes 8:00 a 17:00 • Conmutador (571) 597 8300 • Fax (571) 597 8399 
+                    • Línea gratuita de atención 01 8000 912002 ó (571) 597 8300 Exts. 2532 - 2605
+            Carrera 59 No. 26-70 Interior I - CAN • Código postal 111321 • Apartado Aéreo 80043 • Bogotá D.C., Colombia - Suramérica </p>
+            <p><a style="text-decoration: none; color: #FFF;" href="/index.php/gestion-de-contenidos" target="">Gestión de información</a></p>
+            <p><a style="text-decoration: none; color: #FFF;" href="/index.php/contactenos" target="">Contáctenos</a></p>
         </div>
 
     </h:body>

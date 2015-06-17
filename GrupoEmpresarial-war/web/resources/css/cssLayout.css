@@ -1,18 +1,36 @@
 
 #top {
+    /*
     position: relative;
     background-color: #ffffff;
     color: white;
     padding: 5px;
     margin: 0px 0px 10px 0px;
+    */
+    background-color: #ffffff; 
+    margin: 0 auto; 
+    color: #FFFFFF; 
+    width: 972px;
+}
+#center {
+    background-color: #ffffff; 
+    margin: 0 auto;
+    width: 972px;
+    height: 600px;
 }
 
 #bottom {
-    position: center;
+    /*position: center;
     background-color: #a91155;
     color: white;
     padding: 5px;
-    margin: 100px 0px 0px 0px;
+    margin: 100px 0px 0px 0px;*/
+    background-color: #424242; 
+    margin: 0 auto; 
+    color: #FFFFFF; 
+    width: 972px;
+    font-size: 95%; 
+    text-align: center;
 }
 
 #left {
@@ -44,7 +62,7 @@
 .right_content {
     background-color: #ffffff;
     padding: 5px;
-    margin: 0px 170px 0px 170px;
+    margin: 0px 235px 0px 235px;
 }
 
 #top a:link, #top a:visited {

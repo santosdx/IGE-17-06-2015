@@ -2,56 +2,17 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:ui="http://java.sun.com/jsf/facelets"
-      xmlns:p="http://primefaces.org/ui"
-      xmlns:h="http://java.sun.com/jsf/html">
+      xmlns:p="http://primefaces.org/ui">
 
-    <h:head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <h:outputStylesheet name="./css/default.css"/>
-        <h:outputStylesheet name="./css/cssLayout.css"/>
-        <title>Facelets Template</title>
-    </h:head>
+    <body>
 
-    <h:body>
+        <ui:composition template="plantilla.xhtml">
 
-        <div id="top">
-            <!--Encabezado-->
-            <!--Imagen DANE-->
-            <p:graphicImage value="./resources/imagen/dane.PNG" />
-        </div>
-        <div id="left">
-        </div>
-        <div>
-            <div>
-                <div id="content" class="center_content">
-                    <ui:insert name="content"></ui:insert>
-                    <h:form >
-                        <p:growl id="msgs" showDetail="true" />
-                        <h:panelGrid columns="2" cellpadding="5">
-                            <p:outputLabel value="Usuario" for="acSimple" />
-                            <p:autoComplete id="acSimple" value="#{autoCompleteView.txt1}" completeMethod="#{autoCompleteView.completeText}" />
-                            <h:outputText value="Contraseña" />
-                            <p:password id="nonFeedback" value="#{passwordView.password1}" />
-                            <p:growl id="growl" life="2000" />
-                            <p:commandButton value="Ingresar" id="ajax" update="growl" actionListener="#{buttonView.buttonAction}" styleClass="ui-priority-primary" />
-                        </h:panelGrid>
-                    </h:form>
-                </div>
-            </div>
-        </div>
-        <div id="right">
-        </div>
-        <div id="bottom">
-            <ui:insert name="bottom"><p align="center">Departamento Administrativo Nacional de Estadística</p>
-                <p align="center">DANE</p>
-                <p align="center">Carrera 59 No. 26-70 Interior I - CAN</p>
-                <p align="center">Conmutador (571) 597 8300 -Fax (571) 597 8399 Línea gratuita de atención 01 8000 912002 ó (571) 97 8300 Exts. 2532 - 2605</p>
-                <p align="center">Horario de atención: Lunes a viernes 8:00 a 17:00</p>
-                <p align="center">A.A. 80043 Zona postal 611</p>
-                <p align="center">Bogotá, D.C., Colombia - Suramérica</p>
-                <p align="center"> </p>
-                <p align="center">sige@dane.gov.co</p></ui:insert>
-        </div>
+            <ui:define name="content">
+                <h4>Bienvenidos</h4>
+            </ui:define>
 
-    </h:body>
+        </ui:composition>
+
+    </body>
 </html>
